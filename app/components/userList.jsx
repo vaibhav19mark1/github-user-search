@@ -82,11 +82,11 @@ const UserList = ({ query, page = 1 }) => {
             <div
               onClick={() => router.push(`/user/${login}`)}
               key={id}
-              className="rounded-lg border bg-card text-card-foreground transition-all shadow-sm hover:shadow-md h-full cursor-pointer"
+              className="rounded-lg border bg-card text-card-foreground transition-all shadow-sm hover:shadow-lg hover:bg-[#BE5B50] hover:text-white h-full cursor-pointer"
             >
               <div className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border-1 border-gray-700">
+                  <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border-1 border-[#8A2D3B]">
                     <img
                       className="aspect-square h-full w-full"
                       src={avatar_url || "/placeholder.svg"}
@@ -106,7 +106,7 @@ const UserList = ({ query, page = 1 }) => {
                           e.stopPropagation();
                           handleRedirect(html_url);
                         }}
-                        className="text-sm hover:text-blue-400 cursor-pointer"
+                        className="text-sm hover:text-[#8A2D3B] cursor-pointer"
                       >
                         View on Github
                       </button>
@@ -125,7 +125,7 @@ const UserList = ({ query, page = 1 }) => {
             type="button"
             onClick={() => handlePageChange(page - 1)}
             disabled={page <= 1}
-            className="flex items-center ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-blue-700 hover:bg-blue-800 cursor-pointer"
+            className="flex items-center ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-[#BE5B50] hover:bg-[#8A2D3B] cursor-pointer"
           >
             <ChevronLeft className="h-4 w-4 mr-1" /> Previous
           </button>
@@ -136,7 +136,7 @@ const UserList = ({ query, page = 1 }) => {
             type="button"
             onClick={() => handlePageChange(page + 1)}
             disabled={page >= totalPages}
-            className="flex items-center ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-blue-700 hover:bg-blue-800 cursor-pointer"
+            className="flex items-center ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-[#BE5B50] hover:bg-[#8A2D3B] cursor-pointer"
           >
             Next <ChevronRight className="h-4 w-4 ml-1" />
           </button>

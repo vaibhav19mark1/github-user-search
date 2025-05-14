@@ -31,7 +31,7 @@ const SearchComponent = ({ query = "" }) => {
       </div>
       <button
         type="button"
-        className="ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-blue-700 hover:bg-blue-800 cursor-pointer"
+        className="ml-2 px-5 py-2.5 text-sm font-medium rounded-lg text-center text-white bg-[#BE5B50] hover:bg-[#8A2D3B] cursor-pointer"
         onClick={handleSearch}
       >
         Search
