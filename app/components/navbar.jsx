@@ -8,7 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="border-b sticky">
+    <header className="border-b sticky top-0 z-50 bg-[#FAF6E9]">
       <div className="container mx-auto mr-auto px-0 py-3 flex items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
           <Github className="h-6 w-6" />
